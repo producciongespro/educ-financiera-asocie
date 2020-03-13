@@ -1,0 +1,657 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Asocie</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author>GESPRO</author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>gsjan7oegtsv</unique-id>
+    <saved-with-version>27500</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Splash</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Sprites">
+            <object-type name="inversion" sid="321343663861438">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="miX" sid="716471918374269" type="number" />
+                    <instance-variable name="miY" sid="602344467429436" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="547198166953898">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Propiedades" pingpong="0" repeatcount="1" repeatto="0" sid="897577964678089" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.508197" original-source="C:\prueba\www\asocie\img\Boton-Propiedades.png">
+                            <collision-poly>
+                                <point x="0.0588235" y="0.163934" />
+                                <point x="0.5" y="0.0491803" />
+                                <point x="0.947059" y="0.147541" />
+                                <point x="0.982353" y="0.491803" />
+                                <point x="0.947059" y="0.852459" />
+                                <point x="0.5" y="0.934426" />
+                                <point x="0.0529412" y="0.852459" />
+                                <point x="0.0235294" y="0.491803" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Negocio" pingpong="0" repeatcount="1" repeatto="0" sid="948659281502679" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.508197" original-source="C:\prueba\www\asocie\img\Boton-Negocio-Propio.png">
+                            <collision-poly>
+                                <point x="0.0588235" y="0.163934" />
+                                <point x="0.5" y="0.0655738" />
+                                <point x="0.941176" y="0.163934" />
+                                <point x="0.982353" y="0.491803" />
+                                <point x="0.947059" y="0.852459" />
+                                <point x="0.5" y="0.95082" />
+                                <point x="0.0470588" y="0.868852" />
+                                <point x="0.0235294" y="0.491803" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Certificados" pingpong="0" repeatcount="1" repeatto="0" sid="117098614961371" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.508197" original-source="C:\prueba\www\asocie\img\Boton-Certificados-Plazos.png">
+                            <collision-poly>
+                                <point x="0.0588235" y="0.163934" />
+                                <point x="0.5" y="0.0491803" />
+                                <point x="0.947059" y="0.147541" />
+                                <point x="0.982353" y="0.491803" />
+                                <point x="0.947059" y="0.852459" />
+                                <point x="0.5" y="0.934426" />
+                                <point x="0.0529412" y="0.852459" />
+                                <point x="0.0235294" y="0.491803" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Bonos" pingpong="0" repeatcount="1" repeatto="0" sid="120412782744197" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.508197" original-source="C:\prueba\www\asocie\img\Boton-Bonos.png">
+                            <collision-poly>
+                                <point x="0.0588235" y="0.163934" />
+                                <point x="0.5" y="0.0655738" />
+                                <point x="0.947059" y="0.147541" />
+                                <point x="0.982353" y="0.491803" />
+                                <point x="0.947059" y="0.852459" />
+                                <point x="0.5" y="0.934426" />
+                                <point x="0.0529412" y="0.852459" />
+                                <point x="0.0235294" y="0.491803" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Acciones" pingpong="0" repeatcount="1" repeatto="0" sid="324922680831177" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.508197" original-source="C:\prueba\www\asocie\img\Boton-Acciones.png">
+                            <collision-poly>
+                                <point x="0.0588235" y="0.163934" />
+                                <point x="0.5" y="0.0655738" />
+                                <point x="0.947059" y="0.147541" />
+                                <point x="0.982353" y="0.491803" />
+                                <point x="0.947059" y="0.852459" />
+                                <point x="0.5" y="0.934426" />
+                                <point x="0.0529412" y="0.852459" />
+                                <point x="0.0235294" y="0.491803" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Fondos" pingpong="0" repeatcount="1" repeatto="0" sid="327682829999155" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.508197" original-source="C:\prueba\www\asocie\img\Boton-Fondos-Inversion.png">
+                            <collision-poly>
+                                <point x="0.0588235" y="0.163934" />
+                                <point x="0.5" y="0.0655738" />
+                                <point x="0.947059" y="0.147541" />
+                                <point x="0.982353" y="0.491803" />
+                                <point x="0.947059" y="0.852459" />
+                                <point x="0.5" y="0.934426" />
+                                <point x="0.0529412" y="0.852459" />
+                                <point x="0.0235294" y="0.491803" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Pensiones" pingpong="0" repeatcount="1" repeatto="0" sid="696278538371084" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.508197" original-source="C:\prueba\www\asocie\img\Boton-Fondos-Pension.png">
+                            <collision-poly>
+                                <point x="0.0588235" y="0.163934" />
+                                <point x="0.5" y="0.0655738" />
+                                <point x="0.947059" y="0.147541" />
+                                <point x="0.982353" y="0.491803" />
+                                <point x="0.947059" y="0.852459" />
+                                <point x="0.5" y="0.95082" />
+                                <point x="0.0470588" y="0.868852" />
+                                <point x="0.0235294" y="0.491803" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ejemplos" sid="511619652206323">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="miX" sid="178472684976713" type="number" />
+                    <instance-variable name="miY" sid="528518026606417" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="293042151782019">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="DosPinos" pingpong="0" repeatcount="1" repeatto="0" sid="881426343605417" speed="5">
+                        <frame duration="1" hotspotX="0.502347" hotspotY="0.504348" original-source="C:\prueba\www\asocie\img\Boton-Texto-1.png">
+                            <collision-poly>
+                                <point x="0.0657277" y="0.121739" />
+                                <point x="0.497653" y="0.0782609" />
+                                <point x="0.953052" y="0.0869565" />
+                                <point x="0.953052" y="0.495652" />
+                                <point x="0.915493" y="0.843478" />
+                                <point x="0.497653" y="0.878261" />
+                                <point x="0.0610329" y="0.886957" />
+                                <point x="0.0469484" y="0.495652" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Panaderia" pingpong="0" repeatcount="1" repeatto="0" sid="391072136218283" speed="5">
+                        <frame duration="1" hotspotX="0.502347" hotspotY="0.504348" original-source="C:\prueba\www\asocie\img\Boton-Imagen-1.png">
+                            <collision-poly>
+                                <point x="0.0704225" y="0.130435" />
+                                <point x="0.497653" y="0.0956522" />
+                                <point x="0.948357" y="0.0956522" />
+                                <point x="0.953052" y="0.495652" />
+                                <point x="0.924883" y="0.86087" />
+                                <point x="0.497653" y="0.895652" />
+                                <point x="0.056338" y="0.895652" />
+                                <point x="0.0469484" y="0.495652" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="VentaTerreno" pingpong="0" repeatcount="1" repeatto="0" sid="946946067296455" speed="5">
+                        <frame duration="1" hotspotX="0.502347" hotspotY="0.504348" original-source="C:\prueba\www\asocie\img\Boton-Imagen-2.png">
+                            <collision-poly>
+                                <point x="0.0610329" y="0.113043" />
+                                <point x="0.497653" y="0.0695652" />
+                                <point x="0.953052" y="0.0869565" />
+                                <point x="0.953052" y="0.495652" />
+                                <point x="0.910798" y="0.834783" />
+                                <point x="0.497653" y="0.869565" />
+                                <point x="0.0657277" y="0.878261" />
+                                <point x="0.0469484" y="0.495652" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Ruben" pingpong="0" repeatcount="1" repeatto="0" sid="215919731512683" speed="5">
+                        <frame duration="1" hotspotX="0.502347" hotspotY="0.504348" original-source="C:\prueba\www\asocie\img\Boton-Texto-3.png">
+                            <collision-poly>
+                                <point x="0.0704225" y="0.130435" />
+                                <point x="0.497653" y="0.0956522" />
+                                <point x="0.948357" y="0.0956522" />
+                                <point x="0.953052" y="0.495652" />
+                                <point x="0.924883" y="0.86087" />
+                                <point x="0.497653" y="0.895652" />
+                                <point x="0.056338" y="0.895652" />
+                                <point x="0.0469484" y="0.495652" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Sara" pingpong="0" repeatcount="1" repeatto="0" sid="412921368934615" speed="5">
+                        <frame duration="1" hotspotX="0.502347" hotspotY="0.504348" original-source="C:\prueba\www\asocie\img\Boton-Texto-2.png">
+                            <collision-poly>
+                                <point x="0.0704225" y="0.130435" />
+                                <point x="0.497653" y="0.0956522" />
+                                <point x="0.948357" y="0.0956522" />
+                                <point x="0.953052" y="0.495652" />
+                                <point x="0.924883" y="0.86087" />
+                                <point x="0.497653" y="0.895652" />
+                                <point x="0.0516432" y="0.904348" />
+                                <point x="0.0469484" y="0.495652" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Titulo" pingpong="0" repeatcount="1" repeatto="0" sid="112049445635843" speed="5">
+                        <frame duration="1" hotspotX="0.502347" hotspotY="0.504348" original-source="C:\prueba\www\asocie\img\Boton-Imagen-3.png">
+                            <collision-poly>
+                                <point x="0.0657277" y="0.121739" />
+                                <point x="0.497653" y="0.0869565" />
+                                <point x="0.948357" y="0.0956522" />
+                                <point x="0.948357" y="0.495652" />
+                                <point x="0.920188" y="0.852174" />
+                                <point x="0.497653" y="0.886957" />
+                                <point x="0.056338" y="0.895652" />
+                                <point x="0.0422535" y="0.495652" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Alberto" pingpong="0" repeatcount="1" repeatto="0" sid="263138153217234" speed="5">
+                        <frame duration="1" hotspotX="0.502347" hotspotY="0.504348" original-source="C:\prueba\www\asocie\img\Boton-Texto-4.png">
+                            <collision-poly>
+                                <point x="0.0610329" y="0.113043" />
+                                <point x="0.497653" y="0.0782609" />
+                                <point x="0.943662" y="0.104348" />
+                                <point x="0.943662" y="0.495652" />
+                                <point x="0.915493" y="0.843478" />
+                                <point x="0.497653" y="0.878261" />
+                                <point x="0.0610329" y="0.886957" />
+                                <point x="0.0422535" y="0.495652" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="rendimientos" sid="646932970827052">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="miX" sid="926256551865182" type="number" />
+                    <instance-variable name="miY" sid="262923258908106" type="number" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="DragDrop" sid="105222730228194">
+                        <behavior id="DragnDrop" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Plusvalia" pingpong="0" repeatcount="1" repeatto="0" sid="677950699051371" speed="5">
+                        <frame duration="1" hotspotX="0.502924" hotspotY="0.508197" original-source="C:\prueba\www\asocie\img\Boton-Plusvalia.png">
+                            <collision-poly>
+                                <point x="0.0584795" y="0.163934" />
+                                <point x="0.497076" y="0.0655738" />
+                                <point x="0.94152" y="0.163934" />
+                                <point x="0.97076" y="0.491803" />
+                                <point x="0.94152" y="0.836066" />
+                                <point x="0.497076" y="0.95082" />
+                                <point x="0.0467836" y="0.868852" />
+                                <point x="0.0233918" y="0.491803" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Intereses" pingpong="0" repeatcount="1" repeatto="0" sid="586085810558717" speed="5">
+                        <frame duration="1" hotspotX="0.502924" hotspotY="0.508197" original-source="C:\prueba\www\asocie\img\Boton-Intereses.png">
+                            <collision-poly>
+                                <point x="0.0584795" y="0.163934" />
+                                <point x="0.497076" y="0.0491803" />
+                                <point x="0.94152" y="0.163934" />
+                                <point x="0.976608" y="0.491803" />
+                                <point x="0.94152" y="0.836066" />
+                                <point x="0.497076" y="0.934426" />
+                                <point x="0.0526316" y="0.852459" />
+                                <point x="0.0233918" y="0.491803" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Utilidades" pingpong="0" repeatcount="1" repeatto="0" sid="593946903627050" speed="5">
+                        <frame duration="1" hotspotX="0.502924" hotspotY="0.508197" original-source="C:\prueba\www\asocie\img\Boton-Utilidades.png">
+                            <collision-poly>
+                                <point x="0.0584795" y="0.163934" />
+                                <point x="0.497076" y="0.0655738" />
+                                <point x="0.94152" y="0.163934" />
+                                <point x="0.97076" y="0.491803" />
+                                <point x="0.94152" y="0.836066" />
+                                <point x="0.497076" y="0.934426" />
+                                <point x="0.0467836" y="0.868852" />
+                                <point x="0.0233918" y="0.491803" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Dividendos" pingpong="0" repeatcount="1" repeatto="0" sid="916018133295493" speed="5">
+                        <frame duration="1" hotspotX="0.502924" hotspotY="0.508197" original-source="C:\prueba\www\asocie\img\Boton-Dividendos.png">
+                            <collision-poly>
+                                <point x="0.0584795" y="0.163934" />
+                                <point x="0.497076" y="0.0491803" />
+                                <point x="0.94152" y="0.163934" />
+                                <point x="0.97076" y="0.491803" />
+                                <point x="0.94152" y="0.836066" />
+                                <point x="0.497076" y="0.934426" />
+                                <point x="0.0526316" y="0.852459" />
+                                <point x="0.0233918" y="0.491803" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="Ganancias" pingpong="0" repeatcount="1" repeatto="0" sid="356592176083607" speed="5">
+                        <frame duration="1" hotspotX="0.502924" hotspotY="0.508197" original-source="C:\prueba\www\asocie\img\Boton-Ganancias-Capital.png">
+                            <collision-poly>
+                                <point x="0.0584795" y="0.163934" />
+                                <point x="0.497076" y="0.0655738" />
+                                <point x="0.94152" y="0.163934" />
+                                <point x="0.976608" y="0.491803" />
+                                <point x="0.947368" y="0.852459" />
+                                <point x="0.497076" y="0.934426" />
+                                <point x="0.0526316" y="0.852459" />
+                                <point x="0.0292398" y="0.491803" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="btnJugar" sid="735185005428573">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="412996035879919" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.50505" original-source="C:\prueba\www\asocie\img\btnJugarDeNuevo.png">
+                            <collision-poly>
+                                <point x="0.0328947" y="0.10101" />
+                                <point x="0.5" y="0.040404" />
+                                <point x="0.970395" y="0.0909091" />
+                                <point x="0.970395" y="0.494949" />
+                                <point x="0.921053" y="0.757576" />
+                                <point x="0.0789474" y="0.757576" />
+                                <point x="0.0328947" y="0.494949" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Textos">
+            <object-type name="txtNombre" sid="535425104523820">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="txtAciertos" sid="405750370870506">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="txtIntentos" sid="820921308007811">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
+        <object-folder name="GUI">
+            <object-type name="btnAcercaDe" sid="492849578930241">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="870182478144147" speed="5">
+                        <frame duration="1" hotspotX="0.502857" hotspotY="0.503268" original-source="C:\prueba\www\asocie\img\Boton-Acerca-de.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="btnValidar" sid="136856697024093">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="997124766237398" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="C:\prueba\www\asocie\img\Boton-Verificar.png">
+                            <collision-poly>
+                                <point x="0.0714286" y="0.210526" />
+                                <point x="0.5" y="0.0701754" />
+                                <point x="0.946429" y="0.157895" />
+                                <point x="0.988095" y="0.491228" />
+                                <point x="0.964286" y="0.894737" />
+                                <point x="0.5" y="1" />
+                                <point x="0.0357143" y="0.894737" />
+                                <point x="0.0119048" y="0.491228" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="ventanaResumen" sid="744351817253055">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="795073787869748" speed="5">
+                        <frame duration="1" hotspotX="0.500732" hotspotY="0.5" original-source="C:\prueba\www\asocie\img\Imagen-Intentos.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="acercaDe" sid="787497251720016">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="505260690874735" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\prueba\www\asocie\img\Imagen-Creditos.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Sistema">
+            <object-type name="Touch" sid="292149576191688">
+                <plugin id="Touch" />
+            </object-type>
+            <object-type name="Mouse" sid="248498840492242">
+                <plugin id="Mouse" />
+            </object-type>
+            <object-type name="Browser" sid="761263205447299">
+                <plugin id="Browser" />
+            </object-type>
+            <object-type name="Function" sid="124811351331426">
+                <plugin id="Function" />
+            </object-type>
+            <object-type global="1" name="elementosAEvaluar" sid="998573931193222">
+                <plugin id="Arr" />
+            </object-type>
+            <object-type global="1" name="patron" sid="436365262416285">
+                <plugin id="Arr" />
+            </object-type>
+            <object-type global="1" name="posicionesPizarra" sid="700894141358894">
+                <plugin id="Arr" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Fondos">
+            <object-type name="bgPrincipal" sid="320207665754475">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="223382826269478" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\prueba\www\asocie\img\Fondo.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bgPizarra" sid="134042030670424">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="778236714829822" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\prueba\www\asocie\img\Pizarra.png">
+                            <collision-poly>
+                                <point x="0.0347107" y="0.077634" />
+                                <point x="0.5" y="0.0351201" />
+                                <point x="0.876859" y="0.275416" />
+                                <point x="0.947934" y="0.499076" />
+                                <point x="0.973554" y="0.94085" />
+                                <point x="0.5" y="0.972274" />
+                                <point x="0.0256198" y="0.942699" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bgLogos" sid="808563846062852">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="936440673211473" speed="5">
+                        <frame duration="1" hotspotX="0.501608" hotspotY="0.504132" original-source="C:\prueba\www\asocie\img\Logos.png">
+                            <collision-poly>
+                                <point x="0.0514469" y="0.132231" />
+                                <point x="0.498392" y="0.115702" />
+                                <point x="0.942122" y="0.14876" />
+                                <point x="0.948553" y="0.495868" />
+                                <point x="0.92283" y="0.801653" />
+                                <point x="0.498392" y="0.859504" />
+                                <point x="0.0610932" y="0.842975" />
+                                <point x="0.0289389" y="0.495868" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bgBanner" sid="824898888615675">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="658119279409375" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\prueba\www\asocie\img\Titulo.png">
+                            <collision-poly>
+                                <point x="0.0503356" y="0.208333" />
+                                <point x="0.5" y="0.326389" />
+                                <point x="0.921141" y="0.326389" />
+                                <point x="0.979866" y="0.5" />
+                                <point x="0.944631" y="0.770833" />
+                                <point x="0.5" y="0.972222" />
+                                <point x="0.0201342" y="0.916667" />
+                                <point x="0.0151007" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bgInstrucciones" sid="162644786359607">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="296445677823507" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\prueba\www\asocie\img\Instrucciones.png">
+                            <collision-poly>
+                                <point x="0.0652174" y="0.12766" />
+                                <point x="0.5" y="0.0265957" />
+                                <point x="0.88587" y="0.223404" />
+                                <point x="0.967391" y="0.5" />
+                                <point x="0.896739" y="0.797872" />
+                                <point x="0.5" y="0.87234" />
+                                <point x="0.0434783" y="0.914894" />
+                                <point x="0.0163043" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="bgAciertos" sid="347938295151710">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="227065655812094" speed="5">
+                        <frame duration="1" hotspotX="0.50365" hotspotY="0.5" original-source="C:\prueba\www\asocie\img\Aciertos.png">
+                            <collision-poly>
+                                <point x="0.233577" y="0.192771" />
+                                <point x="0.49635" y="0.0240964" />
+                                <point x="0.773723" y="0.186747" />
+                                <point x="0.941606" y="0.5" />
+                                <point x="0.927007" y="0.939759" />
+                                <point x="0.49635" y="0.975904" />
+                                <point x="0.0729927" y="0.939759" />
+                                <point x="0.0656934" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Sprite" sid="943279834962788">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="440276365371846" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5008" original-source="C:\Users\User\Pictures\2017\logoGESPRO3.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Sensores">
+            <object-type name="snsGeneral" sid="154977236604410">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="959450505392489" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.992188" y="0.390625" />
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Sonidos">
+            <object-type name="Audio" sid="702945863890785">
+                <plugin id="Audio" />
+            </object-type>
+        </object-folder>
+    </object-folder>
+    <families>
+        <family name="botonesFinales" plugin-id="Sprite" sid="367720674203872">
+            <members>
+                <member>btnJugar</member>
+            </members>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Splash.xml</layout>
+        <layout>Principal.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>ePrincipal.xml</event-sheet>
+        <event-sheet>eSplash.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="0">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Mouse" uid="1" />
+        <global-instance type="Browser" uid="2" />
+        <global-instance type="Function" uid="3" />
+        <global-instance type="Audio" uid="39">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="bambu_1.m4a" />
+        <file name="bambu_1.ogg" />
+        <file name="error.m4a" />
+        <file name="error.ogg" />
+        <file name="incorrecta.m4a" />
+        <file name="incorrecta.ogg" />
+        <file name="correcto.m4a" />
+        <file name="correcto.ogg" />
+        <file name="ganador.m4a" />
+        <file name="ganador.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

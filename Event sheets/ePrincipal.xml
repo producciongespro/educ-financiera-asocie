@@ -1,0 +1,783 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ePrincipal</name>
+    <events>
+        <variable constant="0" name="intentos" sid="625218336655011" static="0" type="number">0</variable>
+        <variable constant="0" name="aciertos" sid="307143131924129" static="0" type="number">0</variable>
+        <variable constant="0" name="inversionControl" sid="417710185874190" static="0" type="number">0</variable>
+        <variable constant="0" name="ejemploControl" sid="768270442934388" static="0" type="number">0</variable>
+        <variable constant="0" name="rendimientoControl" sid="655906018918729" static="0" type="number">0</variable>
+        <event-group description="" sid="579607265939976" title="Cargar patrón">
+            <sub-events>
+                <event-block sid="116770376557404">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="389961099550846" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set at X" sid="258315418729649" type="patron">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Value">&quot;Plusvalia Propiedades VentaTerreno&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="457805652707558" type="patron">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Value">&quot;Negocio Panaderia Utilidades&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="892390751419784" type="patron">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Value">&quot;Certificados Intereses Sara&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="458391451892210" type="patron">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Value">&quot;Bonos Dividendos DosPinos&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="173126320350912" type="patron">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Value">&quot;Acciones Ganancias Titulo&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="966126645046619" type="patron">
+                            <param id="0" name="X">5</param>
+                            <param id="1" name="Value">&quot;Fondos Ruben Utilidades&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="286931299616013" type="patron">
+                            <param id="0" name="X">6</param>
+                            <param id="1" name="Value">&quot;Alberto Intereses Pensiones&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="716139862837890" type="inversion">
+                            <param id="0" name="Instance variable">miX</param>
+                            <param id="1" name="Value">inversion.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="218481935118568" type="inversion">
+                            <param id="0" name="Instance variable">miY</param>
+                            <param id="1" name="Value">inversion.Y</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="644382682387453" type="ejemplos">
+                            <param id="0" name="Instance variable">miX</param>
+                            <param id="1" name="Value">ejemplos.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="781125265380989" type="ejemplos">
+                            <param id="0" name="Instance variable">miY</param>
+                            <param id="1" name="Value">ejemplos.Y</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="916252881574777" type="rendimientos">
+                            <param id="0" name="Instance variable">miX</param>
+                            <param id="1" name="Value">rendimientos.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="758533078645918" type="rendimientos">
+                            <param id="0" name="Instance variable">miY</param>
+                            <param id="1" name="Value">rendimientos.Y</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="108094702807570" type="btnValidar">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="462168248252637" type="posicionesPizarra">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Value">350</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="529770012002361" type="posicionesPizarra">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Value">440</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="785402454112510" type="posicionesPizarra">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Value">530</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <variable constant="0" name="inversionArrastrada" sid="478846926348903" static="0" type="number">0</variable>
+        <variable constant="0" name="controlJuego" sid="102202504554994" static="0" type="number">0</variable>
+        <event-group description="" sid="935426062794422" title="Agregar inversiones">
+            <sub-events>
+                <event-block sid="109445429702383">
+                    <conditions>
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="379429484883965" type="inversion" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="255688883088600">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="424037540351219" type="inversion">
+                                    <param id="0" name="Object">snsGeneral</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="468531435940999">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="757812846941073" type="System">
+                                            <param id="0" name="Variable">inversionControl</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="14" name="Log" sid="876369798558559" type="Browser">
+                                            <param id="0" name="Type">0</param>
+                                            <param id="1" name="Message">inversion.AnimationName</param>
+                                        </action>
+                                        <action id="5" name="Push" sid="756217522641820" type="elementosAEvaluar">
+                                            <param id="0" name="Where">0</param>
+                                            <param id="1" name="Value">inversion.AnimationName</param>
+                                            <param id="2" name="Axis">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="878777698832898" type="System">
+                                            <param id="0" name="Variable">inversionArrastrada</param>
+                                            <param id="1" name="Value">inversion.UID</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="941734278459606" type="System">
+                                            <param id="0" name="Variable">inversionControl</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action behavior="DragDrop" id="0" name="Set enabled" sid="278938327685562" type="inversion">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="750314818123789" type="System">
+                                            <param id="0" name="Variable">controlJuego</param>
+                                            <param id="1" name="Value">controlJuego+1</param>
+                                        </action>
+                                        <action id="14" name="Log" sid="120260113290312" type="Browser">
+                                            <param id="0" name="Type">0</param>
+                                            <param id="1" name="Message">&quot;Insertados=&quot;&amp;controlJuego</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="314230268541454" type="Audio">
+                                            <param id="0" name="Audio file">bambu_1</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">10</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="943432428607766" type="inversion">
+                                            <param id="0" name="X">1050</param>
+                                            <param id="1" name="Y">posicionesPizarra.At(1)</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="818830025214032">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="394042510832154" type="System">
+                                                    <param id="0" name="Variable">controlJuego</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-15" name="Set visible" sid="684173472380054" type="btnValidar">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action id="9" name="Set scale" sid="122592766570257" type="btnValidar">
+                                                    <param id="0" name="Scale">2</param>
+                                                </action>
+                                                <action id="-16" name="Wait" sid="177232748200975" type="System">
+                                                    <param id="0" name="Seconds">1.0</param>
+                                                </action>
+                                                <action id="9" name="Set scale" sid="887886006034375" type="btnValidar">
+                                                    <param id="0" name="Scale">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="377779514500892">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="329017628784195" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="987841854252896" type="inversion">
+                                            <param id="0" name="X">inversion.miX</param>
+                                            <param id="1" name="Y">inversion.miY</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="645143443205961" type="Audio">
+                                            <param id="0" name="Audio file">error</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">10</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <variable constant="0" name="ejemploArrastrado" sid="518799785563715" static="0" type="number">0</variable>
+        <event-group description="" sid="992506250153918" title="AgregarEjemplos">
+            <sub-events>
+                <event-block sid="207730224233919">
+                    <conditions>
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="483047742661573" type="ejemplos" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="278401020148394">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="428510633661436" type="ejemplos">
+                                    <param id="0" name="Object">snsGeneral</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="974949706651186">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="961838029292289" type="System">
+                                            <param id="0" name="Variable">ejemploControl</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="14" name="Log" sid="435035502834992" type="Browser">
+                                            <param id="0" name="Type">0</param>
+                                            <param id="1" name="Message">ejemplos.AnimationName</param>
+                                        </action>
+                                        <action id="5" name="Push" sid="437580311816851" type="elementosAEvaluar">
+                                            <param id="0" name="Where">0</param>
+                                            <param id="1" name="Value">ejemplos.AnimationName</param>
+                                            <param id="2" name="Axis">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="533454692018081" type="System">
+                                            <param id="0" name="Variable">ejemploArrastrado</param>
+                                            <param id="1" name="Value">ejemplos.UID</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="540250044451310" type="System">
+                                            <param id="0" name="Variable">ejemploControl</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action behavior="DragDrop" id="0" name="Set enabled" sid="420295973189312" type="ejemplos">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="424581992580016" type="System">
+                                            <param id="0" name="Variable">controlJuego</param>
+                                            <param id="1" name="Value">controlJuego+1</param>
+                                        </action>
+                                        <action id="14" name="Log" sid="567315165662072" type="Browser">
+                                            <param id="0" name="Type">0</param>
+                                            <param id="1" name="Message">&quot;Insertados=&quot;&amp;controlJuego</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="763140030797905" type="Audio">
+                                            <param id="0" name="Audio file">bambu_1</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">10</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="463702871205140" type="ejemplos">
+                                            <param id="0" name="X">1070</param>
+                                            <param id="1" name="Y">posicionesPizarra.At(2)</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="463659998857289">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="811235958000540" type="System">
+                                                    <param id="0" name="Variable">controlJuego</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-15" name="Set visible" sid="809647979754623" type="btnValidar">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="502642727737159">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="669442411070074" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="275062756419080" type="ejemplos">
+                                            <param id="0" name="X">ejemplos.miX</param>
+                                            <param id="1" name="Y">ejemplos.miY</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="811744587999148" type="Audio">
+                                            <param id="0" name="Audio file">error</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">10</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <variable constant="0" name="rendimientoArrastrado" sid="418981041965304" static="0" type="number">0</variable>
+        <event-group description="" sid="874622472224744" title="Agregar Rendimientos">
+            <sub-events>
+                <event-block sid="157461176940567">
+                    <conditions>
+                        <condition behavior="DragDrop" id="2" name="On drop" sid="868916293012894" type="rendimientos" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="296290916273358">
+                            <conditions>
+                                <condition id="1" name="Is overlapping another object" sid="624693851859949" type="rendimientos">
+                                    <param id="0" name="Object">snsGeneral</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="104422777234432">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="493136613858678" type="System">
+                                            <param id="0" name="Variable">rendimientoControl</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="14" name="Log" sid="567447564401221" type="Browser">
+                                            <param id="0" name="Type">0</param>
+                                            <param id="1" name="Message">&quot;Inversión: &quot;&amp;inversion.miX&amp;&quot;,&quot;&amp;inversion.miY</param>
+                                        </action>
+                                        <action id="14" name="Log" sid="386009907908528" type="Browser">
+                                            <param id="0" name="Type">0</param>
+                                            <param id="1" name="Message">&quot;Ejemplo: &quot;&amp;ejemplos.miX&amp;&quot;,&quot;&amp;ejemplos.miY</param>
+                                        </action>
+                                        <action id="14" name="Log" sid="996163432792185" type="Browser">
+                                            <param id="0" name="Type">0</param>
+                                            <param id="1" name="Message">&quot;Rendimiento: &quot;&amp;rendimientos.miX&amp;&quot;,&quot;&amp;rendimientos.miY</param>
+                                        </action>
+                                        <action id="5" name="Push" sid="604139333334063" type="elementosAEvaluar">
+                                            <param id="0" name="Where">0</param>
+                                            <param id="1" name="Value">rendimientos.AnimationName</param>
+                                            <param id="2" name="Axis">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="543883607121136" type="System">
+                                            <param id="0" name="Variable">rendimientoArrastrado</param>
+                                            <param id="1" name="Value">rendimientos.UID</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="616355457691682" type="System">
+                                            <param id="0" name="Variable">rendimientoControl</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action behavior="DragDrop" id="0" name="Set enabled" sid="220307987487890" type="rendimientos">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="152338712372597" type="System">
+                                            <param id="0" name="Variable">controlJuego</param>
+                                            <param id="1" name="Value">controlJuego+1</param>
+                                        </action>
+                                        <action id="14" name="Log" sid="376559820058618" type="Browser">
+                                            <param id="0" name="Type">0</param>
+                                            <param id="1" name="Message">&quot;Insertados=&quot;&amp;controlJuego</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="587785141025722" type="Audio">
+                                            <param id="0" name="Audio file">bambu_1</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">10</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                        <action id="-3" name="Set position" sid="603643237173993" type="rendimientos">
+                                            <param id="0" name="X">1053</param>
+                                            <param id="1" name="Y">posicionesPizarra.At(3)</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="613801119549420">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="549350407594355" type="System">
+                                                    <param id="0" name="Variable">controlJuego</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">3</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-15" name="Set visible" sid="708860180237027" type="btnValidar">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="226530749199766">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="588831677003496" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="554725148311823" type="rendimientos">
+                                            <param id="0" name="X">rendimientos.miX</param>
+                                            <param id="1" name="Y">rendimientos.miY</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="555839572105230" type="Audio">
+                                            <param id="0" name="Audio file">error</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">10</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="439328817334627" title="Validar opciones">
+            <sub-events>
+                <variable constant="0" name="encontrado" sid="905563013089116" static="0" type="number">0</variable>
+                <variable constant="0" name="tmpSeleccion" sid="203872301603222" static="0" type="text"></variable>
+                <event-block sid="753485023612903">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="648010810690084" type="Touch">
+                            <param id="0" name="Object">btnValidar</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="8" name="Sort" sid="732436095904331" type="elementosAEvaluar">
+                            <param id="0" name="Axis">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="289473354348092" type="System">
+                            <param id="0" name="Variable">tmpSeleccion</param>
+                            <param id="1" name="Value">elementosAEvaluar.At(0) &amp; &quot; &quot;&amp;elementosAEvaluar.At(1) &amp;&quot; &quot;&amp;elementosAEvaluar.At(2)</param>
+                        </action>
+                        <action id="14" name="Log" sid="349427135214794" type="Browser">
+                            <param id="0" name="Type">0</param>
+                            <param id="1" name="Message">tmpSeleccion</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="769131692254151" type="System">
+                            <param id="0" name="Variable">inversionControl</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="497324541876172" type="System">
+                            <param id="0" name="Variable">ejemploControl</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="942761038644194" type="System">
+                            <param id="0" name="Variable">rendimientoControl</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="665034449647105">
+                            <conditions>
+                                <condition id="3" name="For each element" sid="733889028326030" type="patron">
+                                    <param id="0" name="Axes">2</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="838361103910051">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="781594317021836" type="System">
+                                            <param id="0" name="Variable">tmpSeleccion</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">patron.CurValue</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="14" name="Log" sid="773850331220674" type="Browser">
+                                            <param id="0" name="Type">0</param>
+                                            <param id="1" name="Message">&quot;Coincidencia!&quot;</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="929222695359241" type="System">
+                                            <param id="0" name="Variable">encontrado</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="-24" name="Stop loop" sid="870394142215222" type="System" />
+                                        <action id="0" name="Clear" sid="389703977061612" type="elementosAEvaluar" />
+                                        <action id="1" name="Set size" sid="865760322175534" type="elementosAEvaluar">
+                                            <param id="0" name="Width">0</param>
+                                            <param id="1" name="Height">1</param>
+                                            <param id="2" name="Depth">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="572095661941542">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="841115993070614" type="System">
+                                    <param id="0" name="Variable">encontrado</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="857176855052779">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="779739563184748" type="ejemplos">
+                                            <param id="0" name="Unique ID">ejemploArrastrado</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="329994719518446" type="ejemplos" />
+                                        <action id="14" name="Log" sid="598457437570229" type="Browser">
+                                            <param id="0" name="Type">0</param>
+                                            <param id="1" name="Message">&quot;Si fue encontrado: &quot;&amp;encontrado</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="428130601712498" type="System">
+                                            <param id="0" name="Variable">aciertos</param>
+                                            <param id="1" name="Value">aciertos+1</param>
+                                        </action>
+                                        <action id="0" name="Set text" sid="148847906041422" type="txtAciertos">
+                                            <param id="0" name="Text">&quot;0&quot;&amp;aciertos</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="746049988053077" type="btnValidar">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="536107300053378" type="System">
+                                            <param id="0" name="Variable">controlJuego</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="279598054221318" type="Audio">
+                                            <param id="0" name="Audio file">correcto</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">10</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="600616415275482">
+                                            <conditions>
+                                                <condition id="-14" name="Compare variable" sid="813251057634923" type="System">
+                                                    <param id="0" name="Variable">aciertos</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">7</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="14" name="Log" sid="903363555707563" type="Browser">
+                                                    <param id="0" name="Type">0</param>
+                                                    <param id="1" name="Message">&quot;Ya ganó&quot;</param>
+                                                </action>
+                                                <action id="0" name="Play" sid="691907683333541" type="Audio">
+                                                    <param id="0" name="Audio file">ganador</param>
+                                                    <param id="2" name="Loop">0</param>
+                                                    <param id="3" name="Volume">10</param>
+                                                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="597344939849623" type="ventanaResumen">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action id="0" name="Set text" sid="703235356583321" type="txtIntentos">
+                                                    <param id="0" name="Text">&quot;Ganaste el juego con un total de &quot;&amp;intentos+aciertos&amp;&quot; intentos&quot;</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="855821405865988" type="txtIntentos">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                                <action id="-15" name="Set visible" sid="387578529724966" type="botonesFinales">
+                                                    <param id="0" name="Visibility">1</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="507458025838064">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="901753908999294" type="rendimientos">
+                                            <param id="0" name="Unique ID">rendimientoArrastrado</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="596767037674274" type="rendimientos">
+                                            <param id="0" name="X">rendimientos.miX</param>
+                                            <param id="1" name="Y">rendimientos.miY</param>
+                                        </action>
+                                        <action behavior="DragDrop" id="0" name="Set enabled" sid="638828276482193" type="rendimientos">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="776618033167851">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="491782534368894" type="inversion">
+                                            <param id="0" name="Unique ID">inversionArrastrada</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="291441792933435" type="inversion" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="911752182548465">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="948585934301593" type="System" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="122116354999892">
+                                    <conditions>
+                                        <condition id="6" inverted="1" name="Is empty" sid="783418244157911" type="elementosAEvaluar" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Clear" sid="832245237575996" type="elementosAEvaluar" />
+                                        <action id="1" name="Set size" sid="104177004664198" type="elementosAEvaluar">
+                                            <param id="0" name="Width">0</param>
+                                            <param id="1" name="Height">1</param>
+                                            <param id="2" name="Depth">1</param>
+                                        </action>
+                                        <action id="14" name="Log" sid="314632423810776" type="Browser">
+                                            <param id="0" name="Type">0</param>
+                                            <param id="1" name="Message">&quot;Encontrado: &quot;&amp;encontrado</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="912971250218413" type="System">
+                                            <param id="0" name="Variable">intentos</param>
+                                            <param id="1" name="Value">intentos+1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="526297307613457" type="System">
+                                            <param id="0" name="Variable">controlJuego</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="834657838043212" type="btnValidar">
+                                            <param id="0" name="Visibility">0</param>
+                                        </action>
+                                        <action id="0" name="Play" sid="224548640495521" type="Audio">
+                                            <param id="0" name="Audio file">incorrecta</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">10</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="964016441579438">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="310741381448966" type="rendimientos">
+                                            <param id="0" name="Unique ID">rendimientoArrastrado</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="166934759650302" type="rendimientos">
+                                            <param id="0" name="X">rendimientos.miX</param>
+                                            <param id="1" name="Y">rendimientos.miY</param>
+                                        </action>
+                                        <action behavior="DragDrop" id="0" name="Set enabled" sid="450726747873180" type="rendimientos">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="542692211186883">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="317213397343558" type="ejemplos">
+                                            <param id="0" name="Unique ID">ejemploArrastrado</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="555649583093194" type="ejemplos">
+                                            <param id="0" name="X">ejemplos.miX</param>
+                                            <param id="1" name="Y">ejemplos.miY</param>
+                                        </action>
+                                        <action behavior="DragDrop" id="0" name="Set enabled" sid="982262208584304" type="ejemplos">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="546460087011302">
+                                    <conditions>
+                                        <condition id="-14" name="Pick by unique ID" sid="366473111886903" type="inversion">
+                                            <param id="0" name="Unique ID">inversionArrastrada</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-3" name="Set position" sid="254925681421766" type="inversion">
+                                            <param id="0" name="X">inversion.miX</param>
+                                            <param id="1" name="Y">inversion.miY</param>
+                                        </action>
+                                        <action behavior="DragDrop" id="0" name="Set enabled" sid="401498700710475" type="inversion">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="712183362802330" title="Reiniciar Juego">
+            <sub-events>
+                <event-block sid="409867571659554">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="983118719349100" type="System">
+                            <param id="0" name="Variable">aciertos</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">7</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="444432532760046">
+                            <conditions>
+                                <condition id="3" name="On touched object" sid="330759280080064" type="Touch">
+                                    <param id="0" name="Object">btnJugar</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-26" name="Restart layout" sid="247989683987933" type="System" />
+                                <action id="-9" name="Set value" sid="384408031494198" type="System">
+                                    <param id="0" name="Variable">aciertos</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="178064909225892" type="System">
+                                    <param id="0" name="Variable">controlJuego</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="343529163495963" type="btnValidar">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <variable constant="0" name="acercaDeVisible" sid="842191783409345" static="0" type="number">0</variable>
+        <event-group description="" sid="357962038866761" title="Acerca de" />
+        <event-block sid="384363229203336">
+            <conditions>
+                <condition id="3" name="On touched object" sid="385146992661101" type="Touch">
+                    <param id="0" name="Object">btnAcercaDe</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="14" name="Log" sid="659469055245906" type="Browser">
+                    <param id="0" name="Type">0</param>
+                    <param id="1" name="Message">&quot;Escribir acerca de&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="544029013967230" type="acercaDe">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="896624705180119" type="System">
+                    <param id="0" name="Variable">acercaDeVisible</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="528856652230883">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="230185602702269" type="System">
+                    <param id="0" name="Variable">acercaDeVisible</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="224771501134786">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="444364602832780" type="Touch">
+                            <param id="0" name="Object">acercaDe</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="442795068506239" type="System">
+                            <param id="0" name="Variable">acercaDeVisible</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="487747104078046" type="acercaDe">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

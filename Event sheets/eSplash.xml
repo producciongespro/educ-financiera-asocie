@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>eSplash</name>
+    <events>
+        <event-block sid="127646866581393">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="243977166248755" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="802402977429781" type="System">
+                    <param id="0" name="Seconds">2.0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="133285778012310" type="System">
+                    <param id="0" name="Layout">Principal</param>
+                </action>
+                <action id="4" name="Preload" sid="354082163335130" type="Audio">
+                    <param id="0" name="Audio file">bambu_1</param>
+                </action>
+                <action id="4" name="Preload" sid="789185410792939" type="Audio">
+                    <param id="0" name="Audio file">correcto</param>
+                </action>
+                <action id="4" name="Preload" sid="728333749441126" type="Audio">
+                    <param id="0" name="Audio file">error</param>
+                </action>
+                <action id="4" name="Preload" sid="582012541112918" type="Audio">
+                    <param id="0" name="Audio file">ganador</param>
+                </action>
+                <action id="4" name="Preload" sid="882945646369429" type="Audio">
+                    <param id="0" name="Audio file">incorrecta</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
