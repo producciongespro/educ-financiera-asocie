@@ -779,5 +779,53 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="845275249961531">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="906354815981222" type="Mouse">
+                    <param id="0" name="Object">btnAcercaDe</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="927226169801278" type="btnAcercaDe">
+                    <param id="0" name="Opacity">70</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="676443775458103">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="777824956042487" type="Mouse">
+                    <param id="0" name="Object">btnAcercaDe</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="590579887211343" type="btnAcercaDe">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="636524090801529">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="311212636946846" type="Mouse">
+                    <param id="0" name="Object">btnValidar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="494717441697011" type="btnValidar">
+                    <param id="0" name="Opacity">70</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="614359461389601">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="370093388834287" type="Mouse">
+                    <param id="0" name="Object">btnValidar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="811108833894141" type="btnValidar">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
