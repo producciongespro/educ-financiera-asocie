@@ -218,7 +218,7 @@
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Ruben" pingpong="0" repeatcount="1" repeatto="0" sid="215919731512683" speed="5">
-                        <frame duration="1" hotspotX="0.502347" hotspotY="0.504348" original-source="C:\prueba\www\asocie\img\Boton-Texto-3.png">
+                        <frame duration="1" hotspotX="0.502347" hotspotY="0.504348" original-source="C:\wamp64\www\asocie\diseño_grafico\Boton-Texto-3.png">
                             <collision-poly>
                                 <point x="0.0704225" y="0.130435" />
                                 <point x="0.497653" y="0.0956522" />
@@ -232,7 +232,7 @@
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Sara" pingpong="0" repeatcount="1" repeatto="0" sid="412921368934615" speed="5">
-                        <frame duration="1" hotspotX="0.502347" hotspotY="0.504348" original-source="C:\prueba\www\asocie\img\Boton-Texto-2.png">
+                        <frame duration="1" hotspotX="0.502347" hotspotY="0.504348" original-source="C:\wamp64\www\asocie\diseño_grafico\Boton-Texto-2.png">
                             <collision-poly>
                                 <point x="0.0704225" y="0.130435" />
                                 <point x="0.497653" y="0.0956522" />
@@ -246,7 +246,7 @@
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Titulo" pingpong="0" repeatcount="1" repeatto="0" sid="112049445635843" speed="5">
-                        <frame duration="1" hotspotX="0.502347" hotspotY="0.504348" original-source="C:\prueba\www\asocie\img\Boton-Imagen-3.png">
+                        <frame duration="1" hotspotX="0.502347" hotspotY="0.504348" original-source="C:\Users\User\Downloads\Elementos_Sitio_Web_Asocie_Tipos_de_Inversión\Boton-Imagen-3.png">
                             <collision-poly>
                                 <point x="0.0657277" y="0.121739" />
                                 <point x="0.497653" y="0.0869565" />
@@ -260,7 +260,7 @@
                         </frame>
                     </animation>
                     <animation framecount="1" loop="0" name="Alberto" pingpong="0" repeatcount="1" repeatto="0" sid="263138153217234" speed="5">
-                        <frame duration="1" hotspotX="0.502347" hotspotY="0.504348" original-source="C:\prueba\www\asocie\img\Boton-Texto-4.png">
+                        <frame duration="1" hotspotX="0.502347" hotspotY="0.504348" original-source="C:\wamp64\www\asocie\diseño_grafico\Boton-Texto-4.png">
                             <collision-poly>
                                 <point x="0.0610329" y="0.113043" />
                                 <point x="0.497653" y="0.0782609" />
