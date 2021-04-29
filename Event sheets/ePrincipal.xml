@@ -777,6 +777,7 @@
                         </action>
                     </actions>
                 </event-block>
+                <comment>Opacidad de botones al pasar el mouse</comment>
             </sub-events>
         </event-block>
         <event-block sid="845275249961531">
@@ -824,6 +825,31 @@
             <actions>
                 <action id="-16" name="Set opacity" sid="811108833894141" type="btnValidar">
                     <param id="0" name="Opacity">100</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Estilo del mouse</comment>
+        <event-block sid="302941279039713">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="568387877154001" type="Mouse">
+                    <param id="0" name="Object">btnAcercaDe</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="600319541618954" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="686369078362196">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="826539007646353" type="Mouse">
+                    <param id="0" name="Object">btnAcercaDe</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="981808977063167" type="Mouse">
+                    <param id="0" name="Cursor style">0</param>
                 </action>
             </actions>
         </event-block>
